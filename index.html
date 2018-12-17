@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Information</title>
+  </head>
+  <body>
+    <h1>Personal Information</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <div>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="usersurname">Surname:</label>
+            <input id="usersurname" type="text" name="surname">
+          </div>
+          <div>
+            <label for="username">Name:</label>
+            <input id="username" type="text" name="name">
+          </div>
+          <div>
+            <label for="userage">How old are You?:</label>
+            <input id="userage" type="number" name="age">
+          </div>
+          <div>
+            <label for="userfulldate">Full date of birth:</label>
+            <input type="date" min="1900-01-01" max="2018-11-25" lang="en" id="userfulldate" name="fulldate" required>
+          </div>
+          <div>
+            <label for="checkbox">I accept the terms of the agreement</label>
+            <input id="checkbox" type="checkbox">
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Registration</legend>
+          <div>
+            <label for="useremail">E-mail</label>
+            <input id="useremail" type="email" name="email">
+          </div>
+          <div>
+            <label for="userpassword">Password</label>
+            <input id="userpassword" type="password" name="password" autocomplete="current-password">
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>An interesting fact about You!</legend>
+          <div>
+            <p>Do You love cats?</p>
+            <div>
+              <input id="yescats" type="radio" name="ycats" value="Yes">
+              <label for="yescats">Yes</label>
+            </div>
+            <div>
+              <input id="nocats" type="radio" name="ncats" value="Not">
+              <label for="nocats">Not</label>
+            </div>
+          </div>
+          <div>
+            <label for="usercolor">What is your favorite color?</label>
+            <div>
+              <input type="color" id="usercolor" name="color" value="#000000">
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="usertimesleep">What time do You go bed?</label>
+              <div>
+                <input type="time" id="usertimesleep" name="timesleep" min="00:00" max="23:59" required>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="carbrand">What your favorite brand of cars?</label>
+            <div>
+              <select id="carbrand" name="carbrand" multiple size="4">
+                <option>BMW</option>
+                <option>Audi</option>
+                <option selected>Lada</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="userrate">How do you rate our work?</label>
+            <div>
+              <input type="range" id="userrate" name="rate" min="0" max="10">
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Your comments:</legend>
+          <textarea id="comments" name="comments" rows="3" placeholder="Comments..." minlength="10" maxlength="200"></textarea>
+        </fieldset>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>

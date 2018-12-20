@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-2">Personal Information</h1>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" id="form">
+        <div class="my-3">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="row">
+              <div class="form-group col-12 col-sm-6 col-lg-8">
+                <label for="user-surname">Surname:</label>
+                <input class="form-control" id="user-surname" type="text" name="surname">
+              </div>
+              <div class="form-group col-12 col-sm-6 col-lg-4">
+                <label for="username">Name:</label>
+                <input class="form-control" id="username" type="text" name="name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12 col-sm-12 col-lg-4">
+                <label for="user-age">How old are You?:</label>
+                <input class="form-control" id="user-age" type="number" name="age">
+              </div>
+              <div class="form-group col-12 col-sm-6 col-lg-4">
+                <label for="user-full-date">Full date of birth:</label>
+                <input class="form-control" type="date" min="1900-01-01" max="2018-11-25" lang="en" id="user-full-date" name="fulldate" required>
+              </div>
+              <div class="col-lg-6 offset-2 col-sm-6">
+                <div class="checkbox form-check">
+                  <label class="form-check-label" for="checkbox">
+                    <input class="form-check-input" id="checkbox" type="checkbox">
+                    I accept the terms of the agreement 
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="my-3">
+          <legend>Registration</legend>
+          <fieldset>
+            <div class="row">
+              <div class="form-group col-12 col-sm-6 col-lg-4">
+                <label for="user-email">E-mail</label>
+                <input class="form-control" id="user-email" type="email" name="email">
+              </div>
+              <div class="form-group col-12 col-sm-6 col-lg-4">
+                <label for="user-password">Password</label>
+                <input class="form-control" id="user-password" type="password" name="password" autocomplete="current-password">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="my-3">
+          <fieldset>
+            <legend>An interesting fact about You!</legend>
+            <div class="row">
+              <div class="form-group form-check col-12 col-sm-6 col-lg-4">
+                <p>Do You love cats?</p>
+                <div class="form-group form-check">
+                  <input class="form-check-input" id="yescats" type="radio" name="ycats" value="Yes">
+                  <label for="yescats">Yes</label>
+                </div>
+                <div class="form-group form-check">
+                  <input class="form-check-input" id="nocats" type="radio" name="ncats" value="Not">
+                  <label for="nocats">Not</label>
+                </div>
+              </div>
+              <div class="form-group col-12 col-sm-6 col-lg-4">
+                <label for="user-color">What is your favorite color?</label>
+                <div>
+                  <input class="form-control" type="color" id="user-color" name="color" value="#000000">
+                </div>
+              </div>
+              <div class="form-group col-12 col-sm-6 col-lg-4">
+                <div>
+                  <label for="user-time-sleep">What time do You go bed?</label>
+                  <div>
+                    <input class="form-control" type="time" id="user-time-sleep" name="timesleep" min="00:00" max="23:59" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-4 col-sm-6">
+                <label for="car-brand">What your favorite brand of cars?</label>
+                <div>
+                  <select class="form-control" id="car-brand" name="car-brand" multiple size="4">
+                    <option>BMW</option>
+                    <option>Audi</option>
+                    <option selected>Lada</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-lg-4 col-sm-6">
+                <label for="user-rate">How do you rate our work?</label>
+                <div>
+                  <input class="form-control" type="range" id="user-rate" name="rate" min="0" max="10">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="my-2 row">
+          <fieldset class="form-group col-lg-6 offset-lg-2 col-12 col-sm-6 offset-sm-3">
+            <legend>Your comments:</legend>
+            <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="Comments..." minlength="10" maxlength="200"></textarea>
+          </fieldset>
+        </div>
+        <div class="my-2 row text-right">
+          <div class="col-sm-8"></div>
+          <div class="col-12 col-sm-4">
+            <input class="btn btn-success btn-block" type="submit" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

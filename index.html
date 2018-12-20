@@ -15,8 +15,8 @@
             <legend>Personal Information</legend>
             <div class="row">
               <div class="form-group col-12 col-sm-6 col-lg-8">
-                <label for="usersurname">Surname:</label>
-                <input class="form-control" id="usersurname" type="text" name="surname">
+                <label for="user-surname">Surname:</label>
+                <input class="form-control" id="user-surname" type="text" name="surname">
               </div>
               <div class="form-group col-12 col-sm-6 col-lg-4">
                 <label for="username">Name:</label>
@@ -25,12 +25,12 @@
             </div>
             <div class="row">
               <div class="form-group col-12 col-sm-12 col-lg-4">
-                <label for="userage">How old are You?:</label>
-                <input class="form-control" id="userage" type="number" name="age">
+                <label for="user-age">How old are You?:</label>
+                <input class="form-control" id="user-age" type="number" name="age">
               </div>
               <div class="form-group col-12 col-sm-6 col-lg-4">
-                <label for="userfulldate">Full date of birth:</label>
-                <input class="form-control" type="date" min="1900-01-01" max="2018-11-25" lang="en" id="userfulldate" name="fulldate" required>
+                <label for="user-full-date">Full date of birth:</label>
+                <input class="form-control" type="date" min="1900-01-01" max="2018-11-25" lang="en" id="user-full-date" name="fulldate" required>
               </div>
               <div class="col-lg-6 offset-2 col-sm-6">
                 <div class="checkbox form-check">
@@ -48,12 +48,12 @@
           <fieldset>
             <div class="row">
               <div class="form-group col-12 col-sm-6 col-lg-4">
-                <label for="useremail">E-mail</label>
-                <input class="form-control" id="useremail" type="email" name="email">
+                <label for="user-email">E-mail</label>
+                <input class="form-control" id="user-email" type="email" name="email">
               </div>
               <div class="form-group col-12 col-sm-6 col-lg-4">
-                <label for="userpassword">Password</label>
-                <input class="form-control" id="userpassword" type="password" name="password" autocomplete="current-password">
+                <label for="user-password">Password</label>
+                <input class="form-control" id="user-password" type="password" name="password" autocomplete="current-password">
               </div>
             </div>
           </fieldset>
@@ -74,25 +74,25 @@
                 </div>
               </div>
               <div class="form-group col-12 col-sm-6 col-lg-4">
-                <label for="usercolor">What is your favorite color?</label>
+                <label for="user-color">What is your favorite color?</label>
                 <div>
-                  <input class="form-control" type="color" id="usercolor" name="color" value="#000000">
+                  <input class="form-control" type="color" id="user-color" name="color" value="#000000">
                 </div>
               </div>
               <div class="form-group col-12 col-sm-6 col-lg-4">
                 <div>
-                  <label for="usertimesleep">What time do You go bed?</label>
+                  <label for="user-time-sleep">What time do You go bed?</label>
                   <div>
-                    <input class="form-control" type="time" id="usertimesleep" name="timesleep" min="00:00" max="23:59" required>
+                    <input class="form-control" type="time" id="user-time-sleep" name="timesleep" min="00:00" max="23:59" required>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="form-group col-lg-4 col-sm-6">
-                <label for="carbrand">What your favorite brand of cars?</label>
+                <label for="car-brand">What your favorite brand of cars?</label>
                 <div>
-                  <select class="form-control" id="carbrand" name="carbrand" multiple size="4">
+                  <select class="form-control" id="car-brand" name="car-brand" multiple size="4">
                     <option>BMW</option>
                     <option>Audi</option>
                     <option selected>Lada</option>
@@ -100,9 +100,9 @@
                 </div>
               </div>
               <div class="form-group col-lg-4 col-sm-6">
-                <label for="userrate">How do you rate our work?</label>
+                <label for="user-rate">How do you rate our work?</label>
                 <div>
-                  <input class="form-control" type="range" id="userrate" name="rate" min="0" max="10">
+                  <input class="form-control" type="range" id="user-rate" name="rate" min="0" max="10">
                 </div>
               </div>
             </div>
@@ -114,10 +114,10 @@
             <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="Comments..." minlength="10" maxlength="200"></textarea>
           </fieldset>
         </div>
-        <div class="row text-right">
-          <div class="col-8 col-sm-8 col-md-8 col-lg-8"></div>
-          <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-            <input class="btn btn-success btn-block" type="submit" value="Submit">
+        <div class="my-2 row text-right">
+          <div class="col-sm-8 "></div>
+          <div class="col-12 col-sm-4">
+            <input class="btn btn-success btn-block " type="submit" value="Submit">
           </div>
         </div>
       </form>
